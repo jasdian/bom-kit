@@ -1,0 +1,14 @@
+reorder_imports = true
+use_small_heuristics = "Max"
+use_field_init_shorthand = false
+fn_params_layout = "Tall"
+### EXPERIMENTAL FEATURES ###
+# imports_granularity = "Crate"
+# comment_width = 100
+# wrap_comments = true
+# binop_separator = "Back"
+# trailing_comma = "Vertical"
+# trailing_semicolon = false
+# brace_style = "PreferSameLine"
+# control_brace_style = "AlwaysSameLine"
+# condense_wildcard_suffixes = true

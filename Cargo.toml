@@ -1,0 +1,25 @@
+[package]
+name = "bom-kit"
+version = "0.1.0"
+edition = "2024"
+authors = ["Adrian Jastrzebski <business@quantdevlabs.com>"]
+description = "A flexible Bill of Materials (BOM) management library for assembly planning with substitutes and unit conversions"
+readme = "README.md"
+repository = "https://github.com/jasdian/bom-kit"
+license = "MIT OR Apache-2.0"
+keywords = ["bom", "bill-of-materials", "mrp", "assembly", "manufacturing"]
+categories = ["data-structures", "science"]
+
+[dependencies]
+thiserror = "2.0"
+serde = { version = "1.0", features = ["derive"], optional = true }
+rust_decimal = "1.39"
+rust_decimal_macros = "1.39"
+
+[dev-dependencies]
+serde_json = "1.0"
+pretty_assertions = "1.4.1"
+
+[features]
+default = []
+serde = ["dep:serde", "rust_decimal/serde"]
