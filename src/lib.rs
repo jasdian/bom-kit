@@ -27,4 +27,24 @@
 
 pub mod error;
 
+pub mod bom;
+pub mod explosion;
+// pub mod inventory;
+
+pub mod component;
+pub mod part;
+pub mod substitute;
+pub mod quantity;
+
+pub mod loaders;
+// pub mod export;
+
+// pub mod factory;
+
 pub use error::{BomError, Result};
+// pub use bom::Bom;
+// pub use component::Component;
+// pub use part::{Part, PartId};
+// pub use quantity::{Quantity, Unit};
+// pub use substitute::{Substitute, SubstituteRatio};
+// pub use explosion::{BomExplosion, ExplosionOptions};
