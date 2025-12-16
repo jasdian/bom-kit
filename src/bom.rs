@@ -95,7 +95,7 @@ impl Bom {
                         part_id: child_id.clone(),
                         quantity: qty.clone(), // Direct clone of Quantity::Units(...); TODO: quantity
                         reference: None,       // TODO: reference
-                        substitutes: vec![],
+                        substitutes: vec![], // TODO: Rc for the parts group - store vec / ID for the group?
                         // Add other fields as needed with defaults
                         ..Default::default()
                     };
