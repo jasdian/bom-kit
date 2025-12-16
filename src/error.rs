@@ -2,8 +2,6 @@
 
 use thiserror::Error;
 
-pub type Result<T> = std::result::Result<T, BomError>;
-
 #[derive(Error, Debug)]
 pub enum BomError {
     #[error("Part not found: {0}")]
@@ -11,6 +9,14 @@ pub enum BomError {
 
     #[error("Circular dependency detected: {0}")]
     CircularDependency(String),
+
+    #[error(
+        "Quantity calculation overflow during BOM explosion (likely due to deep hierarchy or cycle)"
+    )]
+    QuantityCalculationOverflow {
+        /// Optional: the part IDs involved or multiplier values
+        context: Option<String>,
+    },
 
     #[error("Incompatible units: cannot operate on {0} and {1}")]
     IncompatibleUnits(String, String),

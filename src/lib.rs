@@ -33,18 +33,19 @@ pub mod explosion;
 
 pub mod component;
 pub mod part;
-pub mod substitute;
 pub mod quantity;
+pub mod substitute;
 
-pub mod loaders;
+// pub mod loaders;
 // pub mod export;
 
 // pub mod factory;
 
-pub use error::{BomError, Result};
-// pub use bom::Bom;
-// pub use component::Component;
-// pub use part::{Part, PartId};
-// pub use quantity::{Quantity, Unit};
-// pub use substitute::{Substitute, SubstituteRatio};
+pub use bom::{Bom, Dependencies};
+pub use component::Component;
+pub use error::BomError;
+// pub use loaders::read_csv;
+pub use part::{Part, PartId};
+pub use quantity::{Quantity, Unit};
+pub use substitute::{Substitute, SubstituteRatio};
 // pub use explosion::{BomExplosion, ExplosionOptions};
