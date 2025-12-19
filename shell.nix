@@ -12,6 +12,7 @@ pkgs.mkShell {
     rust-bin.stable.latest.rust-analyzer
     rust-bin.stable.latest.rust-src
     cargo-info
+    cargo-modules
   ];
 
   RUST_SRC_PATH   = "${pkgs.rust-bin.stable.latest.rust-src}/lib/rustlib/src/rust/library";
