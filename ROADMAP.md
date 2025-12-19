@@ -22,17 +22,24 @@ Provide a lightweight BOM (Bill of Materials) toolkit that simplifies BOM creati
 
 ## Releases
 
-- 0.1.X — MVP: CSV parse + validation, core Unit (as count) BoM
+- 0.1.1
+  - core Unit (as count) BoM
   - component
   - part
   - quantity
   - BoM and its explosion
   - substitute
+- 0.1.2
+  - CSV parse + validation
   - where-used and cost analysis (part cost)
+  - usage example
 - 0.2.0
+  - refactor codebase, to keep minimal `pub` access
+  - stack usage (VecDeque), over recursive calls
   - Format exports (JSON, SPDX)
   - different quantity types
   - inventory (part/assembly recipe coverage)
+  - tests coverage
 - 0.3.0
   - assemble cost, calculation cost modes
   - Stability, documentation, CI
