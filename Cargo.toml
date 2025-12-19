@@ -2,6 +2,7 @@
 name = "bom-kit"
 version = "0.1.1"
 edition = "2024"
+rust-version = "1.92"
 authors = ["Adrian Jastrzebski <business@quantdevlabs.com>"]
 description = "A flexible Bill of Materials (BOM) management library for assembly planning with substitutes and unit conversions"
 readme = "README.md"
