@@ -6,7 +6,7 @@ authors = ["Adrian Jastrzebski <business@quantdevlabs.com>"]
 description = "A flexible Bill of Materials (BOM) management library for assembly planning with substitutes and unit conversions"
 readme = "README.md"
 repository = "https://github.com/jasdian/bom-kit"
-license = "MIT OR Apache-2.0"
+license-file = "LICENSE"
 keywords = ["bom", "bill-of-materials", "mrp", "assembly", "manufacturing"]
 categories = ["data-structures", "science"]
 
