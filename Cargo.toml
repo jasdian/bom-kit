@@ -1,0 +1,26 @@
+[package]
+name = "bom-kit"
+version = "0.1.1"
+edition = "2024"
+rust-version = "1.92"
+authors = ["Adrian Jastrzebski <business@quantdevlabs.com>"]
+description = "A flexible Bill of Materials (BOM) management library for assembly planning with substitutes and unit conversions"
+readme = "README.md"
+repository = "https://github.com/jasdian/bom-kit"
+license = "FSL-1.1-ALv2"
+keywords = ["bom", "bill-of-materials", "mrp", "assembly", "manufacturing"]
+categories = ["data-structures", "science"]
+
+[dependencies]
+thiserror = "2.0.17"
+serde = { version = "1.0.228", features = ["derive"], optional = true }
+rust_decimal = "1.39.0"
+rust_decimal_macros = "1.39.0"
+
+[dev-dependencies]
+serde_json = "1.0.145"
+pretty_assertions = "1.4.1"
+
+[features]
+default = []
+serde = ["dep:serde", "rust_decimal/serde"]
